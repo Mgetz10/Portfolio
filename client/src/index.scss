@@ -1,0 +1,304 @@
+$primary: #32c3ff;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.info {
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #5776e9;
+  color: white;
+}
+
+.info.info-danger {
+  background-color: #e73f3f;
+}
+
+// --------------------
+// Style for App component
+html,
+body,
+.App,
+#root {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.row {
+  justify-content: space-around;
+}
+
+.App {
+  text-align: center;
+  --accent-color: #32c2ff;
+  --dark-color: #041b15;
+  --dark2-color: #136f63;
+  --light-color: #22aaa1;
+  --light2-color: #84cae7;
+  background: #22aaa12e;
+  height: 200%;
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+
+  .App-header {
+    background-color: var(--light2-color);
+    padding: 1% 1% 0.5%;
+    color: white;
+
+    a {
+      // color: white;
+      padding: 0 5px;
+      text-decoration: unset;
+      // font-size: 2rem;
+    }
+
+    a.active {
+      font-weight: bold;
+    }
+  }
+
+  .App-title {
+    // font-size: 3rem;
+    margin: 4% 0 1%;
+  }
+
+  .App-intro {
+    font-size: large;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// --------------------
+// Style for Home component
+.Home {
+  p {
+    font-size: 1.2em;
+  }
+}
+
+// --------------------
+// Style for Secret component
+.Secret {
+  .result {
+    font-size: 1.2em;
+    color: $primary;
+  }
+}
+
+.nav-bar {
+  justify-content: flex-end;
+}
+
+.MoreIngredientsRecipesContainer {
+  padding: 1% 0;
+}
+
+.MoreIngredients {
+  overflow: scroll;
+  width: 80%;
+}
+
+.ingredient-image-container {
+  width: 90%;
+}
+
+.ingredient-image-container span {
+  font-size: 0.5rem;
+}
+
+.ingredient-image {
+  width: 100%;
+}
+
+.ingredient-image img {
+  max-width: 100%;
+  display: block;
+}
+
+.link-container {
+  width: 100%;
+}
+
+.fridge-ingredients {
+  width: 33.3%;
+  border-bottom: #041b1575 1px solid;
+  padding: 3% 0 1%;
+}
+
+.refrigerator {
+  // width: 472px;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: linear-gradient(white, #84cae73b);
+  border: 8px var(--dark-color) solid;
+  border-radius: 21px;
+  overflow: hidden;
+  box-shadow: -6px -5px var(--dark-color);
+  padding: 1%;
+}
+
+.last-search-row {
+  margin: 1% 0;
+}
+
+.form {
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-inputs {
+  width: 50%;
+}
+
+.presets {
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.magnet {
+  background: white;
+  color: var(--dark-color);
+  margin: 1%;
+  box-shadow: 2px 2px;
+}
+
+.mag-1 {
+  transform: rotate(2deg);
+}
+
+.mag-2 {
+  position: relative;
+  margin-top: -4px;
+  transform: rotate(-1deg);
+}
+
+.mag-3 {
+  transform: rotate(0deg);
+}
+
+.user {
+  margin-right: auto;
+  padding: 1px 2px;
+  transform: rotate(-2deg);
+}
+
+.last-search {
+  padding: 0.4% 1%;
+  margin: 1% 2%;
+}
+
+.recipes img {
+  margin: 0 2px;
+  border: solid 1px black;
+}
+
+.preset-ingredients {
+  padding: 1px 4px;
+  border: solid 1px #00000047;
+  margin: 1px 0;
+  box-shadow: 0px 0px 2px inset;
+  border-radius: 6px;
+  background: var(--dark2-color);
+  color: white;
+}
+
+.Add-Ingredient h2 {
+  margin: 8px 0 8px;
+  font-size: 1rem;
+}
+.presets2 {
+  overflow: scroll;
+  position: relative;
+}
+
+.Fridge button {
+  margin-top: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .App-title {
+    font-size: 1.5rem;
+  }
+
+  .ingredient-image img {
+    max-width: 100%;
+    max-height: 38px;
+    display: block;
+  }
+
+  .refrigerator {
+    width: 236px;
+  }
+  .food-head {
+    width: 100px;
+  }
+
+  .Fridge h2 {
+    font-size: 24px;
+  }
+
+  .Fridge button {
+    font-size: 0.75rem;
+    margin-top: 1%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .App-header a {
+    font-size: 2rem;
+  }
+
+  .App-title {
+    font-size: 3rem;
+  }
+
+  .ingredient-image img {
+    max-height: 76px;
+  }
+
+  .refrigerator {
+    width: 472px;
+  }
+
+  .food-head {
+    width: 200px;
+  }
+
+  .user {
+    font-size: 2rem;
+  }
+
+  .Fridge h2 {
+    font-size: 48px;
+  }
+
+  .Fridge button {
+    font-size: 1.5rem;
+  }
+}
