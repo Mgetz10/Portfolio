@@ -62,41 +62,5 @@ export default {
   logout() {
     localStorage.removeItem('user');
     return service.get('/logout');
-  },
-
-  addIngredient(ingredientInfo) {
-    return service
-      .post('/addingredient', ingredientInfo)
-      .then(res => {
-        return res.data;
-      })
-      .catch(errHandler);
-  },
-
-  getIngredients() {
-    return service
-      .get('/getingredients')
-      .then(res => {
-        return res.data;
-      })
-      .catch(err => console.log(err));
-  },
-
-  deleteIngredient(ingredient) {
-    return service
-      .post('/delete-ingredient', ingredient)
-      .then(res => {
-        return res.data;
-      })
-      .catch(errHandler);
-  },
-
-  getFridge() {
-    return service
-      .get('/getfridge')
-      .then(res => {
-        return res.data.fridge._id;
-      })
-      .catch(err => console.log(err));
   }
 };

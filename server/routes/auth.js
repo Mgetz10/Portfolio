@@ -2,7 +2,6 @@ const express = require('express');
 const passport = require('passport');
 const router = express.Router();
 const User = require('../models/User');
-const Fridge = require('../models/Fridge');
 
 // Bcrypt to encrypt passwords
 const bcrypt = require('bcrypt');
@@ -26,11 +25,6 @@ router.post('/signup', (req, res, next) => {
       return newUser.save();
     })
     .then(userSaved => {
-      // create users fridge
-      newFridge = new Fridge({
-        user_id: userSaved._id
-      });
-      newFridge.save();
       // LOG IN THIS USER
       // "req.logIn()" is a Passport method that calls "serializeUser()"
       // (that saves the USER ID in the session)
