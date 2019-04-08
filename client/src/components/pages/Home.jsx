@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom';
 
 class Home extends Component {
   render() {
-    if (!api.isLoggedIn()) return <Redirect to="/login" />;
     return (
       <div className="Home">
         <h2>Home</h2>
