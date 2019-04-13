@@ -12,23 +12,14 @@ class Navbar extends Component {
     return (
       <header className="App-header">
         <div className="nav-bar flex">
-          <div className="user">{this.props.user.username}</div>
-          {api.isLoggedIn() && (
-            <NavLink to="/" exact>
-              Home
-            </NavLink>
-          )}
-          {!api.isLoggedIn() && <NavLink to="/signup">Signup</NavLink>}
-          {!api.isLoggedIn() && <NavLink to="/login">Login</NavLink>}
-          {api.isLoggedIn() && (
-            <Link to="/" onClick={e => this.handleLogoutClick(e)}>
-              Logout
-            </Link>
-          )}
-          {api.isLoggedIn() && <NavLink to="/secret">Secret</NavLink>}
+          <div className="user">Hello</div>
+          <Link to="/" exact>
+            Home
+          </Link>
+          <NavLink to="/secret">Secret</NavLink>
         </div>
         <div className="flex">
-          <h1 className="App-title">Foodini</h1>
+          <h1 className="App-title">Monroe</h1>
         </div>
       </header>
     );

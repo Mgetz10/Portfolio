@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
 
 class Routes extends Component {
   render() {
@@ -18,14 +16,6 @@ class Routes extends Component {
               setUser={this.props.setUser}
             />
           )}
-        />
-        <Route
-          path="/signup"
-          render={props => <Signup {...props} setUser={this.props.setUser} />}
-        />
-        <Route
-          path="/login"
-          render={props => <Login {...props} setUser={this.props.setUser} />}
         />
         <Route render={() => <h2>404</h2>} />
       </Switch>
