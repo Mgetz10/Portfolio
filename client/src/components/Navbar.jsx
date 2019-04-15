@@ -16,7 +16,6 @@ class Navbar extends Component {
           <Link to="/" exact>
             Home
           </Link>
-          <NavLink to="/secret">Secret</NavLink>
         </div>
         <div className="flex">
           <h1 className="App-title">Monroe</h1>
