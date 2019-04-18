@@ -5,9 +5,11 @@ class Home extends Component {
     return (
       <div className="Home">
         <h2>Projects</h2>
-        <a href="https://foodini-fridge.herokuapp.com">Foodini</a>
-        <a href="https://footsie.herokuapp.com">Footsie</a>
-        <a href="https://mgetz10.github.io/Music-Game">Stem</a>
+        <div className="flex column">
+          <iframe src="https://foodini-fridge.herokuapp.com" />
+          <iframe src="https://footsie.herokuapp.com" />
+          <iframe src="https://mgetz10.github.io/Music-Game" />
+        </div>
       </div>
     );
   }

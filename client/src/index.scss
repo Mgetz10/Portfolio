@@ -44,12 +44,12 @@ body,
 
 .App {
   text-align: center;
-  --accent-color: #32c2ff;
-  --dark-color: #041b15;
-  --dark2-color: #136f63;
-  --light-color: #22aaa1;
-  --light2-color: #84cae7;
-  background: #22aaa12e;
+  --color1: #00120b;
+  --color2: #35605a;
+  --color3: #6b818c;
+  --color4: #d8e4ff;
+  --color5: #31e981;
+  background: var(--color4);
   height: 200%;
 
   .App-logo {
@@ -58,14 +58,15 @@ body,
   }
 
   .App-header {
-    background-color: var(--light2-color);
+    background-color: var(--color3);
     padding: 1% 1% 0.5%;
-    color: white;
+    color: var(--color4);
 
     a {
       // color: white;
       padding: 0 5px;
       text-decoration: unset;
+      color: var(--color4);
       // font-size: 2rem;
     }
 
@@ -77,6 +78,7 @@ body,
   .App-title {
     // font-size: 3rem;
     margin: 4% 0 1%;
+    color: var(--color5);
   }
 
   .App-intro {
@@ -118,7 +120,6 @@ body,
 .user {
   margin-right: auto;
   padding: 1px 2px;
-  transform: rotate(-2deg);
 }
 
 @media only screen and (max-width: 600px) {
@@ -138,4 +139,12 @@ body,
   .user {
     font-size: 2rem;
   }
+}
+
+iframe {
+  width: 80%;
+}
+
+.Home h2 {
+  color: var(--color1);
 }
