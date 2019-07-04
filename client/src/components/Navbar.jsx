@@ -13,9 +13,8 @@ class Navbar extends Component {
       <header className="App-header">
         <div className="nav-bar flex">
           <div className="user">Hello</div>
-          <Link to="/" exact>
-            Home
-          </Link>
+          <Link to="/">Home</Link>
+          <Link to="/practice">Practice</Link>
         </div>
         <div className="flex">
           <h1 className="App-title">Monroe</h1>
