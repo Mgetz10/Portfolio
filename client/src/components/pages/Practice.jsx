@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
+import Drumkit from '../Javascript30/Drumkit/Drumkit.jsx';
 class Practice extends Component {
-  componentDidMount() {
-    const script = document.createElement('script');
-
-    script.src = '';
-    script.async = true;
-
-    document.body.appendChild(script);
-  }
+  state = {
+    isHidden: true
+  };
+  toggleHidden = () => {
+    this.setState({
+      isHidden: !this.state.isHidden
+    });
+  };
   render() {
     return (
-      <div className="Home">
-        <h2>Projects</h2>
-        <div className="flex column">
-          <iframe src="https://foodini-fridge.herokuapp.com" />
-          <iframe src="https://footsie.herokuapp.com" />
-          <iframe src="https://mgetz10.github.io/Music-Game" />
-        </div>
+      <div className="Practice">
+        <button onClick={this.toggleHidden}>
+          {!this.state.isHidden ? 'Hide Drumkit' : 'Show Drumkit'}
+        </button>
+        {!this.state.isHidden && <Drumkit />}
       </div>
     );
   }
