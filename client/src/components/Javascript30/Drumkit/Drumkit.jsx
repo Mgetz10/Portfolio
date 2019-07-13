@@ -9,7 +9,6 @@ import ride from './sounds/ride.wav';
 import snare from './sounds/snare.wav';
 import tom from './sounds/tom.wav';
 import tink from './sounds/tink.wav';
-// import './drumkit.js';
 
 class Drumkit extends Component {
   componentDidMount() {
