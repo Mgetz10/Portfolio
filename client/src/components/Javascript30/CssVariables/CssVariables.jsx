@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import './style.css';
+import React, { Component } from "react";
+import "./style.css";
 
 class CssVariables extends Component {
   state = {
-    spacing: '10',
-    blur: '10',
-    base: '#ffc600'
+    spacing: "10",
+    blur: "10",
+    base: "#ffc600"
   };
 
   handleUpdate = event => {
@@ -13,18 +13,13 @@ class CssVariables extends Component {
       [event.target.name]: event.target.value
     });
 
-    const suffix = event.target.dataset.sizing || '';
+    const suffix = event.target.dataset.sizing || "";
 
     document.documentElement.style.setProperty(
       `--${event.target.name}`,
       event.target.value + suffix
     );
   };
-  componentDidMount() {
-    const inputs = document.querySelectorAll('.controls input');
-
-    // inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
-  }
 
   render() {
     return (

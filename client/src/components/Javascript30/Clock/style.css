@@ -1,7 +1,7 @@
 .clocktainer {
-  background: #018ded url(/static/media/rain.7a76e065.jpg);
+  background: #018ded url(./images/rain.jpg);
   background-size: cover;
-  font-family: 'helvetica neue';
+  font-family: "helvetica neue";
   text-align: center;
   font-size: 10px;
   margin: 0;
