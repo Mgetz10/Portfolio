@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import api from './api';
-import Navbar from './components/Navbar';
-import Routes from './components/Routes';
+import React, { Component } from "react";
+import Navbar from "./components/Navbar";
+import Routes from "./components/Routes";
 
 export default class App extends Component {
   state = {

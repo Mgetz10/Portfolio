@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import api from '../api';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import api from "../api";
 
 class Navbar extends Component {
   handleLogoutClick(e) {
