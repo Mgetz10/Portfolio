@@ -12,7 +12,6 @@ class Practice extends Component {
   };
   toggleHide = e => {
     let bool = e.target.dataset.hidden === "true";
-    console.log("💩", bool);
     this.setState({
       [`${e.target.dataset.name}Hidden`]: !bool
     });
