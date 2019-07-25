@@ -3,12 +3,14 @@ import Drumkit from "../Javascript30/Drumkit/Drumkit.jsx";
 import Clock from "../Javascript30/Clock/Clock.jsx";
 import CssVariables from "../Javascript30/CssVariables/CssVariables.jsx";
 import FlexPanels from "../Javascript30/FlexPanels/FlexPanels.jsx";
+import DrawCanvas from "../Javascript30/DrawCanvas/DrawCanvas.jsx";
 class Practice extends Component {
   state = {
     DrumkitHidden: true,
     ClockHidden: true,
     CssVariablesHidden: true,
-    FlexPanelsHidden: true
+    FlexPanelsHidden: true,
+    DrawCanvasHidden: true
   };
   toggleHide = e => {
     let bool = e.target.dataset.hidden === "true";
@@ -21,7 +23,8 @@ class Practice extends Component {
     { name: "Drumkit", component: Drumkit },
     { name: "Clock", component: Clock },
     { name: "CssVariables", component: CssVariables },
-    { name: "FlexPanels", component: FlexPanels }
+    { name: "FlexPanels", component: FlexPanels },
+    { name: "DrawCanvas", component: DrawCanvas }
   ];
 
   render() {
