@@ -5,6 +5,7 @@ import CssVariables from "../Javascript30/CssVariables/CssVariables.jsx";
 import FlexPanels from "../Javascript30/FlexPanels/FlexPanels.jsx";
 import DrawCanvas from "../Javascript30/DrawCanvas/DrawCanvas.jsx";
 import HoldShift from "../Javascript30/HoldShift/HoldShift.jsx";
+import CustomVideo from "../Javascript30/CustomVideo/CustomVideo.jsx";
 class Practice extends Component {
   state = {
     DrumkitHidden: true,
@@ -12,7 +13,8 @@ class Practice extends Component {
     CssVariablesHidden: true,
     FlexPanelsHidden: true,
     DrawCanvasHidden: true,
-    HoldShiftHidden: true
+    HoldShiftHidden: true,
+    CustomVideoHidden: true
   };
   toggleHide = e => {
     let bool = e.target.dataset.hidden === "true";
@@ -27,7 +29,8 @@ class Practice extends Component {
     { name: "CssVariables", component: CssVariables },
     { name: "FlexPanels", component: FlexPanels },
     { name: "DrawCanvas", component: DrawCanvas },
-    { name: "HoldShift", component: HoldShift }
+    { name: "HoldShift", component: HoldShift },
+    { name: "CustomVideo", component: CustomVideo }
   ];
 
   render() {
