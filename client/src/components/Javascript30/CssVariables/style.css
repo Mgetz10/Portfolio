@@ -7,7 +7,7 @@
   margin-top: 0;
 }
 
-img {
+.cssvars img {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));

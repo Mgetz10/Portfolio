@@ -6,6 +6,7 @@ import FlexPanels from "../Javascript30/FlexPanels/FlexPanels.jsx";
 import DrawCanvas from "../Javascript30/DrawCanvas/DrawCanvas.jsx";
 import HoldShift from "../Javascript30/HoldShift/HoldShift.jsx";
 import CustomVideo from "../Javascript30/CustomVideo/CustomVideo.jsx";
+import "../Javascript30/KonamiCode/KonamiCode.jsx";
 class Practice extends Component {
   state = {
     DrumkitHidden: true,
